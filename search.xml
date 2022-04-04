@@ -4,26 +4,29 @@
   
     
     <entry>
-      <title>Hexo</title>
-      <link href="/2022/04/03/hexo/"/>
-      <url>/2022/04/03/hexo/</url>
+      <title>恍然大悟！静态语言和动态语言的差别</title>
+      <link href="/2021/09/22/huang-ran-da-wu-jing-tai-yu-yan-he-dong-tai-yu-yan-de-chai-bie/"/>
+      <url>/2021/09/22/huang-ran-da-wu-jing-tai-yu-yan-he-dong-tai-yu-yan-de-chai-bie/</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2022/04/03/hello-world/"/>
-      <url>/2022/04/03/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="静态语言代表：C，C-，Java，C-等"><a href="#静态语言代表：C，C-，Java，C-等" class="headerlink" title="静态语言代表：C，C++，Java，C#等"></a>静态语言代表：C，C++，Java，C#等</h2><h2 id="动态语言代表：Python，Ruby等"><a href="#动态语言代表：Python，Ruby等" class="headerlink" title="动态语言代表：Python，Ruby等"></a>动态语言代表：Python，Ruby等</h2><hr><h3 id="动态语言和静态语言的区别1："><a href="#动态语言和静态语言的区别1：" class="headerlink" title="动态语言和静态语言的区别1："></a>动态语言和静态语言的区别1：</h3><br><p>静态语言是在编译时变量的数据类型即可确定的语言，多数静态类型语言要求在使用变量之前必须声明数据类型  </p><p>动态语言是在运行时确定数据类型的语言。变量使用之前不需要类型声明，通常变量的类型是被赋值的那个值的类型</p><br><p><strong>总结：静态语言使用前必须声明类型，如int a等；而动态语言可以直接使用变量a，无需提前声明</strong></p><br><h3 id="动态语言和静态语言的区别2："><a href="#动态语言和静态语言的区别2：" class="headerlink" title="动态语言和静态语言的区别2："></a>动态语言和静态语言的区别2：</h3><br><p>静态类型语言编译时会进行类型匹配检查，所以不能给变量赋予不同类型的值</p><p>动态类型语言的变量类型在运行期是可变的，这意味着对象的多态性是与生俱来的</p><br><p><strong>总结：在静态语言中，如果已经有int a，此时令a=’hello’，则会报错；而在动态语言中，即使有a=3，a的值也可以随便更改为2.343，’hello’等</strong></p><hr><h3 id="与静态语言相比，动态语言更灵活，但是静态语言比动态语言在大型项目上更安全"><a href="#与静态语言相比，动态语言更灵活，但是静态语言比动态语言在大型项目上更安全" class="headerlink" title="与静态语言相比，动态语言更灵活，但是静态语言比动态语言在大型项目上更安全"></a>与静态语言相比，动态语言更灵活，但是静态语言比动态语言在大型项目上更安全</h3>]]></content>
       
       
+      <categories>
+          
+          <category> 总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 总结 </tag>
+            
+            <tag> 动态语言 </tag>
+            
+            <tag> 静态语言 </tag>
+            
+        </tags>
       
     </entry>
     
