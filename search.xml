@@ -33,6 +33,91 @@
     
     
     <entry>
+      <title>22/01/10 随笔</title>
+      <link href="/2022/01/10/sui-bi/"/>
+      <url>/2022/01/10/sui-bi/</url>
+      
+        <content type="html"><![CDATA[<p>ceil()上取整，在cmath库中</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+            <tag> 函数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C++的简单容器deque</title>
+      <link href="/2021/12/19/c-de-jian-dan-rong-qi-deque/"/>
+      <url>/2021/12/19/c-de-jian-dan-rong-qi-deque/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;#include&lt;deque&gt;using namespace std;int main(){    deque&lt;int&gt; a[10];        a[2].push_back(2);    a[2].push_back(3);    a[2].push_back(4);    a[2].push_front(1);    a[0].push_back(2);    a[1].push_back(2);    a[9].push_back(2);        for (int i = 0;i &lt; 10;i ++)    {        if (!a[i].empty())        {            for (int j = 0;j &lt; 10;j ++)            {                cout &lt;&lt; a[i][j] &lt;&lt; ' ';            }            cout &lt;&lt; endl;        }        else        {            cout &lt;&lt; "empty" &lt;&lt; endl;        }    }    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> STL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 总结 </tag>
+            
+            <tag> STL </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>社团工作二三事</title>
+      <link href="/2021/09/23/she-tuan-gong-zuo-er-san-shi/"/>
+      <url>/2021/09/23/she-tuan-gong-zuo-er-san-shi/</url>
+      
+        <content type="html"><![CDATA[<p>/* 本文已经SHA256加密 */</p><p>/* 本文已经SHA256加密 */</p><p>/* 本文已经SHA256加密 */</p><p>/* 本文已经SHA256加密 */</p><p>/* 本文已经SHA256加密 */</p><p>/* 本文已经SHA256加密 */</p><br><h3 id="woc"><a href="#woc" class="headerlink" title="woc"></a>woc</h3><br><p>昨天因为我在的社团（计算机协会）改革，加好友确认是否继续留在计协，我作为新当的副会长，挨个询问。</p><br><p>有的人不同意加好友和不回复这种事就不说了，关键是有个19级的大姐，上来就问我加不加分啥的。</p><br><p>我说可能有吧，她又让我别骗她，跟我扯东扯西，认识谁谁的，和上届会长副会长啥关系的。</p><br><p>明显拿19级学姐这身份跟我摆谱呢，语气真的挺不好的，说我年轻，意思没资历当副会长，</p><br> <p>给我整无语了，社团这玩意就是靠爱发电，你当会长也没啥用说实话，跟你大几有啥关系呢？</p><br><p>我以为是上届会长副会长的朋友啥的，就忍了，难受了一天，真的，我还是没啥社会经历吧，别人一讽刺一点说话就难受</p><br> <p>我们新的会长也是19级的，我寻思不给她添麻烦了，就直接找了上届会长</p><br> <p>我问他这怎么回复？并把聊天记录给他看了，他看了她的回复也挺生气的，说根本就不认识她</p><br> <p>然后上届会长问了上届的副会长，总之就是上届副会长的一个学妹，会长让我别那么不硬气，你可是副会长啊</p><br> <p>我其实以为这个人是他们朋友啥的，不想搞僵了，就服软了，而且上届会长说不加分的，这样的话</p><br><p>我直接就跟她说了没有加分，要不要留下来，她也很硬气奥，就退社团了</p><br><p>这件事给我很大的感触吧，就像上届会长说的，林子大了什么鸟都有，想用爱发电，就得承受这些折磨</p><br><p>以后调整心态，积极进取了属于是，先把爬虫搞好，再好好搞算法比赛吧~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+            <tag> 学校 </tag>
+            
+            <tag> 社团 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>恍然大悟！静态语言和动态语言的差别</title>
       <link href="/2021/09/22/huang-ran-da-wu-jing-tai-yu-yan-he-dong-tai-yu-yan-de-chai-bie/"/>
       <url>/2021/09/22/huang-ran-da-wu-jing-tai-yu-yan-he-dong-tai-yu-yan-de-chai-bie/</url>
@@ -54,6 +139,35 @@
             <tag> 动态语言 </tag>
             
             <tag> 静态语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>牛客网python刷题</title>
+      <link href="/2021/09/21/niu-ke-wang-python-shua-ti/"/>
+      <url>/2021/09/21/niu-ke-wang-python-shua-ti/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-字典是-Python-语言中唯一的映射类型，阐述了键与键值之间的对应关系。"><a href="#1-字典是-Python-语言中唯一的映射类型，阐述了键与键值之间的对应关系。" class="headerlink" title="1. 字典是 Python 语言中唯一的映射类型，阐述了键与键值之间的对应关系。"></a>1. 字典是 Python 语言中唯一的映射类型，阐述了键与键值之间的对应关系。</h3><br><h3 id="2-Python中变量无需声明，但是使用前必须赋值"><a href="#2-Python中变量无需声明，但是使用前必须赋值" class="headerlink" title="2. Python中变量无需声明，但是使用前必须赋值"></a>2. Python中变量无需声明，但是使用前必须赋值</h3><br><h3 id="3-set-为集合类型，会自动删除相同元素"><a href="#3-set-为集合类型，会自动删除相同元素" class="headerlink" title="3. set()为集合类型，会自动删除相同元素"></a>3. set()为集合类型，会自动删除相同元素</h3><br><h3 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h3><pre class="line-numbers language-none"><code class="language-none">a = 1b = aa = 2print(b) -&gt; b = 1a = [1]b = aa.append(2)print(b) -&gt; b = [1,2]a = [1]b = aa = [2]print(b) -&gt; b = [1]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>如代码可知，当a和b为数字时候，a和b指向同一个内存，其值为1，所以当a改变自己的值后，无法影响b的值</strong></p><p>而当a和b都为列表，且用append向列表内添加元素时，a和b指向的内存的值由[1]改变为[1,2]，所以a和b的值均为[1,2]</p><p>当a和b都为列表时，a和b指向同一个内存，其值为[1]，所以当a改变自己的值后，无法影响b的值</p><p><strong>由此可知，当a被赋值且b = a时，改变a的值对b的值无影响，除非改变a和b同时指向的内存的值</strong></p><br><h3 id="5-将-“-1-2-3-”-变成-1-2-3-只需要eval-函数-eval-“-1-2-3-”-x3D-1-2-3"><a href="#5-将-“-1-2-3-”-变成-1-2-3-只需要eval-函数-eval-“-1-2-3-”-x3D-1-2-3" class="headerlink" title="5. 将 “[1,2,3]” 变成 [1,2,3] 只需要eval()函数       eval(“[1,2,3]”) = [1,2,3]"></a>5. 将 “[1,2,3]” 变成 [1,2,3] 只需要eval()函数       eval(“[1,2,3]”) = [1,2,3]</h3><br><h3 id="6-print-函数中可以加入sep间隔符，如-print-“XXXX”-”XXX”-”demo”-sep-x3D-”-“-就会输出-XXXX-XXX-demo-注意字符串间要有逗号才会以分隔符间断"><a href="#6-print-函数中可以加入sep间隔符，如-print-“XXXX”-”XXX”-”demo”-sep-x3D-”-“-就会输出-XXXX-XXX-demo-注意字符串间要有逗号才会以分隔符间断" class="headerlink" title="6. print()函数中可以加入sep间隔符，如 print(“XXXX”,”XXX”,”demo”,sep=”-“) 就会输出 XXXX-XXX-demo  (注意字符串间要有逗号才会以分隔符间断)"></a>6. print()函数中可以加入sep间隔符，如 print(“XXXX”,”XXX”,”demo”,sep=”-“) 就会输出 XXXX-XXX-demo  (注意字符串间要有逗号才会以分隔符间断)</h3><br> <h3 id="7-break中断的是最近的for循环或while循环"><a href="#7-break中断的是最近的for循环或while循环" class="headerlink" title="7. break中断的是最近的for循环或while循环"></a>7. break中断的是最近的for循环或while循环</h3><br><h3 id="8-没事别把变量名起成list，str，dic等，有时会引发蜜汁bug"><a href="#8-没事别把变量名起成list，str，dic等，有时会引发蜜汁bug" class="headerlink" title="8. 没事别把变量名起成list，str，dic等，有时会引发蜜汁bug"></a>8. 没事别把变量名起成list，str，dic等，有时会引发蜜汁bug</h3><br><h3 id="9-可以用-s-strip-b-x3D-x3D-‘’-来判断字符串s的字符是否在字符串b中"><a href="#9-可以用-s-strip-b-x3D-x3D-‘’-来判断字符串s的字符是否在字符串b中" class="headerlink" title="9. 可以用 s.strip(b) == ‘’ 来判断字符串s的字符是否在字符串b中"></a>9. 可以用 s.strip(b) == ‘’ 来判断字符串s的字符是否在字符串b中</h3><pre class="line-numbers language-none"><code class="language-none">s = "aedfeg"b = "abcdefg"s.strip(b) == ''<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>结果为True</p><br><h3 id="10-把列表中的元素重复一遍加入原列表的几种方法："><a href="#10-把列表中的元素重复一遍加入原列表的几种方法：" class="headerlink" title="10. 把列表中的元素重复一遍加入原列表的几种方法："></a>10. 把列表中的元素重复一遍加入原列表的几种方法：</h3><p>如：[1,2,3] -&gt; [1,2,3,1,2,3]</p><p>(1) <code>for i in range(len(nums)): nums.append(nums[i])</code>          </p><p>注意！！当range(len(nums))的时候，这个len值已经被固定了，不会因为在nums中添加元素而导致len(nums)变大</p><p>(2) nums + nums    列表 加 列表 </p><p>(3) nums.extend(nums)  extend()函数是在列表中添加其他列表或字典的键或集合或元组</p><br><h3 id="11-split-表示以-空格，换行-n，制表符-t-为分隔符分割字符串，返回列表"><a href="#11-split-表示以-空格，换行-n，制表符-t-为分隔符分割字符串，返回列表" class="headerlink" title="11. split()  表示以 空格，换行\n，制表符\t 为分隔符分割字符串，返回列表"></a>11. split()  表示以 空格，换行\n，制表符\t 为分隔符分割字符串，返回列表</h3><p>split(“”)  报错，错误写法</p><p>split(“ “)  表示以 空格 为分隔符分割字符串，返回列表</p><br><h3 id="12-sort-是应用在-list-上的方法，sorted-可以对所有可迭代的对象进行排序操作"><a href="#12-sort-是应用在-list-上的方法，sorted-可以对所有可迭代的对象进行排序操作" class="headerlink" title="12. sort 是应用在 list 上的方法，sorted 可以对所有可迭代的对象进行排序操作"></a>12. sort 是应用在 list 上的方法，sorted 可以对所有可迭代的对象进行排序操作</h3><p>其中  reverse – 排序规则，reverse = True 降序 ， reverse = False 升序（默认）</p><p>list.sort() 会改变 list的值，result = sorted(nums) 对nums排序不会影响nums的顺序 ，result内容是排序后的值</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 总结 </tag>
+            
+            <tag> 牛客网 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
