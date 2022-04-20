@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>海伦公式/海伦-秦九韶公式（用三边边长求三角形面积）</title>
+      <link href="/2022/04/20/hai-lun-gong-shi-hai-lun-qin-jiu-shao-gong-shi-yong-san-bian-bian-chang-qiu-san-jiao-xing-mian-ji/"/>
+      <url>/2022/04/20/hai-lun-gong-shi-hai-lun-qin-jiu-shao-gong-shi-yong-san-bian-bian-chang-qiu-san-jiao-xing-mian-ji/</url>
+      
+        <content type="html"><![CDATA[<p><strong>假设在平面内，有一个三角形，边长分别为a、b、c，三角形的面积S可由以下公式求得：</strong></p><p><a href="https://imgtu.com/i/LrafaD"><img src="https://s1.ax1x.com/2022/04/20/LrafaD.png" alt="LrafaD.png"></a></p><br><p><strong>而公式里的p为半周长（周长的一半）：</strong></p><p><a href="https://imgtu.com/i/LraWVO"><img src="https://s1.ax1x.com/2022/04/20/LraWVO.png" alt="LraWVO.png"></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 几何 </tag>
+            
+            <tag> 公式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>浅析时间复杂度与算法优化的关联关系</title>
       <link href="/2022/04/09/qian-xi-shi-jian-fu-za-du-yu-suan-fa-you-hua-de-guan-lian-guan-xi/"/>
       <url>/2022/04/09/qian-xi-shi-jian-fu-za-du-yu-suan-fa-you-hua-de-guan-lian-guan-xi/</url>
@@ -33,6 +60,413 @@
     
     
     <entry>
+      <title>C++遍历map</title>
+      <link href="/2022/03/27/c-bian-li-map/"/>
+      <url>/2022/03/27/c-bian-li-map/</url>
+      
+        <content type="html"><![CDATA[<p>主要有两种方法</p><p>一种是auto：</p><pre class="line-numbers language-none"><code class="language-none">map&lt;int, int&gt; mp;for (auto p : mp){    cout &lt;&lt; p.first &lt;&lt; ' ' &lt;&lt;   p.second &lt;&lt; endl;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p>另一种是iterator迭代器：</p><pre class="line-numbers language-none"><code class="language-none">map&lt;int, int&gt; mp;map&lt;int, int&gt;::iterator iter;for(iter = mp.begin();iter != mp.end();iter ++){    cout &lt;&lt; iter-&gt;first &lt;&lt; ' ' &lt;&lt; iter-&gt;second &lt;&lt; endl;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> STL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> map </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>华科考研笔试第三题</title>
+      <link href="/2022/03/24/hua-ke-kao-yan-bi-shi-di-san-ti/"/>
+      <url>/2022/03/24/hua-ke-kao-yan-bi-shi-di-san-ti/</url>
+      
+        <content type="html"><![CDATA[<br><p><a href="https://imgtu.com/i/LrrmKs"><img src="https://s1.ax1x.com/2022/04/20/LrrmKs.png" alt="LrrmKs.png"></a></p><pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;using namespace std;int main(){    string s;    int n;    cin &gt;&gt; s &gt;&gt; n;    while (n)    {        bool flag = false;        for (int i = 0;i &lt; s.size()-1;i ++)        {            if (s[i] &gt; s[i+1])             {                s.erase(i, 1);                n --;                flag = true;                break;            }        }        if (!flag)        {            s.erase(s.size() - n);            break;        }    }    cout &lt;&lt; s;    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>感觉有点贪心的味，把a从头遍历一遍，如果此位置上的数大于下一个位置上的数，就删掉且n –，直到n为0</p><br><p>为了防止改变原字符串导致遍历出现问题，每做一次修改就break，从头再遍历</p><br><p>需要特判一下没有逆序对的情况，此时就把剩余的n的值的数从a的末尾删去即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 华科 </tag>
+            
+            <tag> 考研笔试 </tag>
+            
+            <tag> 贪心 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>debug反思</title>
+      <link href="/2022/03/05/debug-fan-si/"/>
+      <url>/2022/03/05/debug-fan-si/</url>
+      
+        <content type="html"><![CDATA[<br><p><a href="https://imgtu.com/i/LrrSKA"><img src="https://s1.ax1x.com/2022/04/20/LrrSKA.png" alt="LrrSKA.png"></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 反思 </tag>
+            
+            <tag> debug </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>经典蛇形矩阵——洛谷P5731</title>
+      <link href="/2022/02/28/jing-dian-she-xing-ju-zhen-luo-gu-p5731/"/>
+      <url>/2022/02/28/jing-dian-she-xing-ju-zhen-luo-gu-p5731/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;#include&lt;cmath&gt;using namespace std;const int N = 11;int f[N][N];int main(){    int n;    cin &gt;&gt; n;        int dx[4] = {0, 1, 0, -1}, dy[4] = {1, 0, -1, 0};    int x = 1, y = 1,d = 0;    for (int i = 1;i &lt;= n * n;i ++)    {        f[x][y] = i;        int a = x + dx[d];        int b = y + dy[d];        if (a &gt; n || a &lt; 1 || b &gt; n || b &lt; 1 || f[a][b])        {            d = (d + 1) % 4;            a = x + dx[d];            b = y + dy[d];        }        x = a;        y = b;    }        for (int i = 1;i &lt;= n;i ++)    {        for (int j = 1;j &lt;= n;j ++)            printf("%3d",f[i][j]);        cout &lt;&lt; endl;    }        return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p><strong><a href="https://www.luogu.com.cn/problem/P5731">https://www.luogu.com.cn/problem/P5731</a></strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 洛谷 </tag>
+            
+            <tag> 蛇形矩阵 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C++结构体Struct的cmp函数</title>
+      <link href="/2022/02/27/c-jie-gou-ti-struct-de-cmp-han-shu/"/>
+      <url>/2022/02/27/c-jie-gou-ti-struct-de-cmp-han-shu/</url>
+      
+        <content type="html"><![CDATA[<h3 id="C-的结构体Struct可以容纳许多不同的数据值"><a href="#C-的结构体Struct可以容纳许多不同的数据值" class="headerlink" title="C++的结构体Struct可以容纳许多不同的数据值"></a>C++的结构体Struct可以容纳许多不同的数据值</h3><br><p>举例：</p><pre class="line-numbers language-none"><code class="language-none">struct PayRoll{    int empNumber;    string name;    double hours,payRate,grossPay;};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p>它本质上是创建一个名为 PayRoll 的新数据类型，但我们还并没有使用它</p><p>而以下定义语句创建了 PayRoll 结构体的 3 个变量：</p><pre class="line-numbers language-none"><code class="language-none">PayRoll deptHead, foreman, associate;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><p>它们每一个都是 PayRoll 结构体的实例，可以被分配和拥有自己的内存，以保存其成员数据。请注意，尽管 3 个结构体变量具有不同的名称，但每个变量都包含具有相同名称的成员，如图所示</p><br><p><a href="https://imgtu.com/i/LrBQLq"><img src="https://s1.ax1x.com/2022/04/20/LrBQLq.gif" alt="LrBQLq.gif"></a></p><br><p>我们也可以用声明的结构体中的数据结构去定义一个数组，如：</p><pre class="line-numbers language-none"><code class="language-none">struct PayRoll{    int empNumber;    string name;    double hours,payRate,grossPay;}a[1000];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p>这样就声明了一个a数组，数组中的每个值都具有结构体中的数据类型结构，即我们可以访问 <code>a[1].name</code> 或 <code>a[500].hours</code> 等，但前提是你已经为他们赋过值。</p><p>但是简单定义的结构体不能排序，如果需要将结构体按照某种性质排序，则需要sort函数和手动定义的cmp比较函数，如：</p><pre class="line-numbers language-none"><code class="language-none">struct PayRoll{    int empNumber;    string name;    double hours,payRate,grossPay;}a[1000];bool cmp(RayRoll a, RayRoll b){    return a.name &lt; b.name;   }sort(a, a + 1000, cmp);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p><strong>这样我们就定义了a数组的排序，即按照每个值的name按字典序从小到大排序</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 结构体 </tag>
+            
+            <tag> 排序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>由洛谷P5461和P1498引发的杨辉三角形特性思考</title>
+      <link href="/2022/02/27/you-luo-gu-p5461-he-p1498-yin-fa-de-yang-hui-san-jiao-xing-te-xing-si-kao/"/>
+      <url>/2022/02/27/you-luo-gu-p5461-he-p1498-yin-fa-de-yang-hui-san-jiao-xing-te-xing-si-kao/</url>
+      
+        <content type="html"><![CDATA[<h3 id="源自洛谷-P5461-https-www-luogu-com-cn-problem-P5461"><a href="#源自洛谷-P5461-https-www-luogu-com-cn-problem-P5461" class="headerlink" title="源自洛谷 P5461 https://www.luogu.com.cn/problem/P5461"></a>源自洛谷 P5461 <a href="https://www.luogu.com.cn/problem/P5461">https://www.luogu.com.cn/problem/P5461</a></h3><br><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>现有 $2^n * 2^n (n &lt;= 10)$ 名作弊者站成一个正方形方阵等候 kkksc03 的发落。kkksc03 决定赦免一些作弊者。他将正方形矩阵均分为 $4$ 个更小的正方形矩阵，每个更小的矩阵的边长是原矩阵的一半。其中左上角那一个矩阵的所有作弊者都将得到赦免，剩下 $3$ 个小矩阵中，每一个矩阵继续分为 $4$ 个更小的矩阵，然后通过同样的方式赦免作弊者……直到矩阵无法再分下去为止。所有没有被赦免的作弊者都将被处以棕名处罚。</p><p>给出 $n$ ，请输出每名作弊者的命运，其中 $0$ 代表被赦免，$1$ 代表不被赦免。</p><br><h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>一个整数 $n$。</p><br><h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>$2^n * 2^n$ 的 $01$ 矩阵，代表每个人是否被赦免。数字之间有一个空格。</p><br><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><pre class="line-numbers language-none"><code class="language-none">3 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><pre class="line-numbers language-none"><code class="language-none">0 0 0 0 0 0 0 10 0 0 0 0 0 1 10 0 0 0 0 1 0 10 0 0 0 1 1 1 10 0 0 1 0 0 0 10 0 1 1 0 0 1 10 1 0 1 0 1 0 11 1 1 1 1 1 1 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p>这道题引发了我的一些思考，这道题固然可以递归做，不停的递归四个小正方形矩阵，并将左上角清零，直到无法再划分小正方形矩阵为之。</p><p>但是我们观察这个矩阵，我们可以惊讶的发现，这个矩阵的右半部分，正是杨辉三角的值 % 2 的结果，于是我们可以有代码：</p><pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;#include&lt;cmath&gt;using namespace std;int a[1050][1050];int main(){    int n;    cin &gt;&gt; n;    n = 1 &lt;&lt; n;    a[0][n+1] = 1;    for (int i = 1;i &lt;= n;i ++)    {        for (int j = 1;j &lt;= n;j ++)        {            a[i][j] = a[i-1][j]%2 + a[i-1][j+1]%2;            cout &lt;&lt; (a[i][j]%2) &lt;&lt; ' ';        }        cout &lt;&lt; endl;    }        return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p>值得注意的是：</p><ol><li><p>$1 &lt;&lt; n$ 的含义为把 $1$ 按二进制左移 $n$ 位，即 $2$ 的 $n$ 次方</p></li><li><p>当 $n$ 较大时，会爆 int，所以我们在状态转移的时候就把结果 % 2 ，最后输出答案的时候也 % 2 ，这样就不会爆 int</p></li><li><p>当然也可以把  $a[i][j] = a[i-1][j]%2 + a[i-1][j+1]%2$ ;  换成  $a[i][j] = a[i-1][j] ^ a[i-1][j+1]$ ;  这样输出答案的时候就不用 % 2</p></li><li><p>^ 为异或运算符，0 ^ 0 = 1, 1 ^ 1 = 0, 0 ^ 1 = 1, 1 ^ 0 = 1</p></li></ol><br><h3 id="同样的有洛谷-P1498-南蛮图腾-，此题也可以用杨辉三角形的-2-特性做"><a href="#同样的有洛谷-P1498-南蛮图腾-，此题也可以用杨辉三角形的-2-特性做" class="headerlink" title="同样的有洛谷 P1498 南蛮图腾 ，此题也可以用杨辉三角形的 %2 特性做"></a>同样的有洛谷 P1498 南蛮图腾 ，此题也可以用杨辉三角形的 %2 特性做</h3><p><strong><a href="https://www.luogu.com.cn/problem/P1498">https://www.luogu.com.cn/problem/P1498</a></strong></p><br><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p>自从到了南蛮之地，孔明不仅把孟获收拾的服服帖帖，而且还发现了不少少数民族的智慧，他发现少数民族的图腾往往有着一种分形的效果，在得到了酋长的传授后，孔明掌握了不少绘图技术，但唯独不会画他们的图腾，于是他找上了你的爷爷的爷爷的爷爷的爷爷……帮忙，作为一个好孙子的孙子的孙子的孙子……你能做到吗？</p><br><h3 id="输入格式-1"><a href="#输入格式-1" class="headerlink" title="输入格式"></a>输入格式</h3><p>每个数据一个数字，表示图腾的大小（此大小非彼大小） $n&lt;=10$</p><br><h3 id="输出格式-1"><a href="#输出格式-1" class="headerlink" title="输出格式"></a>输出格式</h3><p>这个大小的图腾</p><br><h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入#1"></a>输入#1</h3><pre class="line-numbers language-none"><code class="language-none">2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出#1"></a>输出#1</h3><pre class="line-numbers language-none"><code class="language-none">   /\  /__\ /\  /\/__\/__\<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="输入-2"><a href="#输入-2" class="headerlink" title="输入#2"></a>输入#2</h3><pre class="line-numbers language-none"><code class="language-none">3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><h3 id="输出-2"><a href="#输出-2" class="headerlink" title="输出#2"></a>输出#2</h3><pre class="line-numbers language-none"><code class="language-none">       /\      /__\     /\  /\    /__\/__\   /\      /\  /__\    /__\ /\  /\  /\  /\/__\/__\/__\/__\<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p><strong>可以看出图腾有2的n次方行，而且带有一定的规律：</strong></p><ol><li><p>当行数为奇数时，若对应数字为 $1$ ，则输出 /\</p></li><li><p>当行数为偶数时，若对应数字为 $1$ ，则输出 /__\    并跳过下个数字继续循环</p></li><li><p>当对应数字为 $0$ 时，输出“  ”（即两个空格）</p></li><li><p>每行的前导空格数量为 $2n - i$ （$i$为行数）</p></li></ol><br><p>对应的杨辉三角形 % 2 如下图：</p><pre class="line-numbers language-none"><code class="language-none">           1          1 1          1 0 1         1 1 1 1        1 0 0 0 1       1 1 0 0 1 1      1 0 1 0 1 0 1     1 1 1 1 1 1 1 1    1 0 0 0 0 0 0 0 1   1 1 0 0 0 0 0 0 1 1  1 0 1 0 0 0 0 0 1 0 11 1 1 1 0 0 0 0 1 1 1 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p><strong>则代码有：</strong></p><pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;using namespace std;int f[1050][1050];int main(){    int n;    cin &gt;&gt; n;    n = 1 &lt;&lt; n;    int t = n;    f[0][n+1] = 1;    for (int i = 1;i &lt;= n;i ++)    {        for (int j = 1;j &lt; t;j ++) cout &lt;&lt; ' ';        t --;        for (int j = 1;j &lt;= n;j ++)        {            f[i][j] = f[i-1][j]%2 + f[i-1][j+1]%2;            f[i][j] %= 2;        }        bool flag = false;        for (int j = 1;j &lt;= n;j ++)        {            if (f[i][j] == 1) flag = true;            if (f[i][j] == 1 || flag)            {                if ((i % 2 == 1) &amp;&amp; f[i][j] == 1) cout &lt;&lt; "/\\";                if ((i % 2 == 0) &amp;&amp; f[i][j] == 1)                {                    cout &lt;&lt; "/__\\";                    j ++;                }                if (!f[i][j]) cout &lt;&lt; "  ";            }        }        cout &lt;&lt; endl;    }    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 洛谷 </tag>
+            
+            <tag> 杨辉三角形 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>markdown语法——复选框</title>
+      <link href="/2022/02/23/markdown-yu-fa-fu-xuan-kuang/"/>
+      <url>/2022/02/23/markdown-yu-fa-fu-xuan-kuang/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p><input disabled="" type="checkbox"> 怎么把这个打上对号呢？</p></li><li><p>[ √ ] 好像不行。。。</p></li><li><p>[ x ] 也不对</p></li></ul><br><p>哪怎么办呢？</p><br><p>靠！找了一晚上，终于会了</p><br><ul><li><input checked="" disabled="" type="checkbox"> qwq</li></ul><br><p>这个叫复选框，把这个放在标题了，希望对以后的人有帮助，切记，打框中对号的时候，中括号内不可以有空格，否则失败；而打出空框的时候，框内应有一个空格</p><br><p>源码分享：</p><pre class="line-numbers language-none"><code class="language-none">- [ ] 怎么把这个打上对号呢？- [ √ ] 好像不行。。。- [ x ] 也不对- [x] qwq<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 复选框 </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>P1009 [NOIP1998 普及组] 阶乘之和</title>
+      <link href="/2022/02/22/p1009-noip1998-pu-ji-zu-jie-cheng-zhi-he/"/>
+      <url>/2022/02/22/p1009-noip1998-pu-ji-zu-jie-cheng-zhi-he/</url>
+      
+        <content type="html"><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>用高精度计算出 $S = 1! + 2! + 3! + ⋯ + n!（n ≤ 50）$</p><p>其中 $!$ 表示阶乘，例如： $5! = 5 × 4 × 3 × 2 × 1$</p><br><h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>一个正整数 $n (1 &lt;= n &lt;= 50)$</p><br><h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>一个正整数 $S$ ，表示计算结果</p><br><pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;using namespace std;const int N = 100010;int a[N], b[N];void add(int* a, int* b){    int k = 0;    for(int i = 1;i &lt;= 1000;i ++)    {        b[i] += a[i] + k;        k = b[i] / 10;        b[i] %= 10;    }}void mul(int* a, int b){    int k = 0;    for(int i = 1;i &lt;= 1000;i ++)    {        a[i] = a[i] * b + k;        k = a[i] / 10;        a[i] %= 10;    }}int main(){    int n;    cin &gt;&gt; n;    a[1] = 1;    for(int i = 1;i &lt;= n;i ++)    {        mul(a, i);        add(a, b);    }        bool flag = 0;    for(int i = 1000;i &gt;= 1;i --)    {        if(b[i] != 0) flag = 1;        if(flag) cout &lt;&lt; b[i];    }    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 洛谷 </tag>
+            
+            <tag> NOIP </tag>
+            
+            <tag> 高精度 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>判断回文数字——纯数字做法</title>
+      <link href="/2022/02/21/pan-duan-hui-wen-shu-zi-chun-shu-zi-zuo-fa/"/>
+      <url>/2022/02/21/pan-duan-hui-wen-shu-zi-chun-shu-zi-zuo-fa/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-none"><code class="language-none">bool f(int x){    int t = x, y = 0;    while (t)    {        y = y * 10 + t % 10;        t /= 10;    }    return x == y;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 字符串 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>云服务器与docker</title>
+      <link href="/2022/02/15/yun-fu-wu-qi-yu-docker/"/>
+      <url>/2022/02/15/yun-fu-wu-qi-yu-docker/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-购买云服务器"><a href="#1-购买云服务器" class="headerlink" title="1. 购买云服务器"></a>1. 购买云服务器</h2><br><p>首先去任意云服务器平台购买一个云服务器，作者购买的是<a href="www.aliyun.com">阿里云</a>的ESC n4服务器，在做完学生认证后，新年活动期间<code>180块大洋买三年</code>，如果没赶上新年活动也不用担心，以后优惠活动非常多，但大多针对第一次购买服务器的学生身份，所以第一次买一定要把羊毛薅光。注意系统要选<code>Ubuntu 20.04 64位</code>，其他随意。</p><p><strong>PS：作者又低价续费(87.12/year)了3年，在降低配置按流量收费后，又退了58.38，所以相当于租了6年花了382.98，一年60多块，这也太香了qwq</strong></p><br><p>在购买完服务器后，首先在阿里云网站界面的<code>云服务器 ECS</code>中选择<code>实例</code>，你就可以看见自己的服务器了，再在自己的服务器上点击<code>更多</code>，<code>重置实例密码</code>，改一个自己能记住的密码，这就是你以后ssh服务器的密码了</p><p><img src="https://cdn.acwing.com/media/article/image/2022/02/15/124314_93eea9338e-1.png" alt="1.png"> </p><p>随后可以选择降低配置，把<strong>按固定宽带模式改为按流量计费模式</strong>，当然你不改也可以~</p><br><p><strong>改为按流量计费模式的好处有：</strong></p><ol><li>改成按流量计费模式属于降低配置，会退一笔钱(作者退了58.38)</li><li>平时不会限制你的带宽，可以拉到100Mb，即12.5MB</li></ol><p>当然坏处就是流量收费了，0.8￥/1G，不过作者建议还是改了好<del>因为平时哪有那么多人访问你的网站</del></p><br><p>同样的，进入<code>云服务器 ECS</code>中的<code>实例</code>，在自己的云服务器后面点击<code>升降配</code>，选择<code>降低配置</code>中的<code>降低带宽配置</code>，进入后在<code>公网带宽</code>中选择<code>按使用流量</code>，并拉满100Mb的配置。如果你的升降配的界面没有降低配置的选项，不用担心，直接找阿里云的人工客服，提供你的公网IP和截图后，5min就能解决，重新刷新界面，就会看到包含<code>降低配置</code>的界面</p><p><img src="https://cdn.acwing.com/media/article/image/2022/02/15/124314_055303ab8e-2.png" alt="2.png"> </p><h2 id="2-配置云服务器"><a href="#2-配置云服务器" class="headerlink" title="2. 配置云服务器"></a>2. 配置云服务器</h2><br><p>之后进入AC Terminal，ssh到自己的服务器，阿里云的默认用户名是root</p><pre class="line-numbers language-none"><code class="language-none">ssh root@xxx.xxx.xxx.xxx  # xxx.xxx.xxx.xxx替换成新服务器的公网IP<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><p>输入你设置好的密码后，你就进入了自己的服务器，这时你登录的是服务器的root账号，在服务器内拥有至高无上的权力，所以有误操作就很容易搞坏服务器，于是我们自己创建一个用户，并赋予他<code>sudo</code>权限，这样就不会发生误操作了，并且要使用root用户的权力时，命令前加上<code>sudo</code>即可</p><pre class="line-numbers language-none"><code class="language-none">adduser riz9  # 创建用户riz9      PS： 这个用户名随便起，怎么舒服怎么来usermod -aG sudo riz9  # 给用户riz9分配sudo权限<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>然后退出服务器，我们设置服务器别名和免密登录</p><br><p>进入 AC terminal 的 ~/.ssh/config 文件中，在后面写上以下内容，User就是你刚才在云服务器中加入的用户名，改完后保存并退出</p><pre class="line-numbers language-none"><code class="language-none">Host 别名    HostName 公网IP    User riz9<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>之后再一键设置免密登录</p><pre class="line-numbers language-none"><code class="language-none">ssh-copy-id 服务器别名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>ssh进入你的云服务器，为它安装tmux</p><pre class="line-numbers language-none"><code class="language-none">sudo apt-get updatesudo apt-get install tmux<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>并把 AC Terminal 的配置传给云服务器</p><pre class="line-numbers language-none"><code class="language-none">scp .bashrc .vimrc .tmux.conf server_name:  # server_name需要换成自己配置的别名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="3-安装docker"><a href="#3-安装docker" class="headerlink" title="3. 安装docker"></a>3. 安装docker</h2><br><p>随后打开tmux，开始安装docker，直接顺次执行以下命令</p><pre class="line-numbers language-none"><code class="language-none">sudo apt-get update<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install \    apt-transport-https \    ca-certificates \    curl \    gnupg \    lsb-release<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">sudo apt-get update<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install docker-ce docker-ce-cli containerd.io<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>然后等待docker的安装完毕，安装完后可以输入<code>docker --version</code>查看docker的版本，如果顺利查询到版本，证明docker已经成功安装完毕</p><h2 id="4-使用docker"><a href="#4-使用docker" class="headerlink" title="4. 使用docker"></a>4. 使用docker</h2><br><p>docker分为<code>images</code>和<code>container</code>，他们的关系相当于月饼的模子和月饼的关系，<code>images</code>即月饼的模子，<code>container</code>即模子扣出来的月饼。<code>images</code>即镜像，可以通过<code>docker pull ubuntu:20.04</code>从官网拉取一个镜像或者<code>docker load -i ubuntu_20_04.tar</code>从本地加载一个镜像（以ubuntu:20.04举例）。<code>container</code>即容器，可以通过<code>docker create -it ubuntu:20.04</code>来创建<code>ubuntu:20.04</code>镜像的一个容器。具体常用命令在y总的<a href="https://www.acwing.com/blog/content/10878/">总结</a>中</p><br><p><strong>以下为提供的镜像文件安装的步骤：</strong></p><p>如果要创建容器必须要有镜像，镜像文件在 <code>~/var/lib/acwing/docker/images/</code>目录下，先把镜像上传到自己的服务器</p><pre class="line-numbers language-none"><code class="language-none">scp /var/lib/acwing/docker/images/docker_lesson_1_0.tar 云服务器名:<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>随后登录自己的云服务器，把镜像加载到本地，创建并运行该镜像，加载完毕后进入该镜像中名为<code>my_docker_server</code>的容器中，设置root密码并创建普通权限用户，再赋予他root权限</p><pre class="line-numbers language-none"><code class="language-none">ssh server_name  # 登录自己的云端服务器docker load -i docker_lesson_1_0.tar  # 将镜像加载到本地docker run -p 20000:22 --name my_docker_server -itd docker_lesson:1.0  # 创建并运行docker_lesson:1.0镜像docker attach my_docker_server  # 进入创建的docker容器passwd  # 设置root密码adduser acs # 创建普通权限用户usermod -aG sudo acs # 给普通权限用户增加root权限<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>挂起<code>my_docker_server</code>容器，返回AC Terminal中，通过公网IP和端口号尝试直接连接到<code>my_docker_server</code>容器中</p><pre class="line-numbers language-none"><code class="language-none">ssh root@xxx.xxx.xxx.xxx -p 20000  # 将xxx.xxx.xxx.xxx替换成自己租的服务器的IP地址<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><p>如果失败，则说明你的阿里云服务器未开放20000端口。进入阿里云网站中的云服务器 Ecs，并在其中找到你的云服务器实例，点击<code>更多</code>，在<code>网络和安全组中</code>点击<code>安全组配置</code>，再点击<code>配置规则</code>，手动添加20000这个端口</p><p>之后应该成功进入到<code>my_docker_server</code>容器中，注意<code>@</code>前面是什么用户名，就用哪个用户登录该容器</p><br><p>随后我们可以配置一下别名和免密登录，先返回到AC Terminal中<code>vim ~/.ssh/config</code>，在后面追加以下内容后，就设置完了服务器的别名</p><pre class="line-numbers language-none"><code class="language-none">Host server1_docker    HostName xxx.xxx.xxx.xxx    User acs    Port 20000<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>追加的内容从上往下分别是<code>my_docker_server容器的别名</code>，<code>容器所在云服务器的公网IP</code>，<code>别名登录时登录的用户名</code>，<code>登录的端口</code></p><p>保存退出之后再执行<code>ssh-copy-id server1_docker</code>，便可设置免密登录</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 云服务器 </tag>
+            
+            <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C++STL使用总结</title>
+      <link href="/2022/02/05/c-stl-shi-yong-zong-jie/"/>
+      <url>/2022/02/05/c-stl-shi-yong-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-vector"><a href="#1-vector" class="headerlink" title="1. vector"></a>1. vector</h3><p>vector 实现的是一个动态数组，即可以进行元素的插入和删除，在此过程中，vector 会动态调整所占用的内存空间，整个过程无需人工干预。<br>vector 为变长数组，体现倍增思想，储存在#include 中，且支持随机访问<br>vector 擅长在尾部插入或删除元素，在常量时间内就可以完成，时间复杂度为 $O(1)$；而对于在容器头部或者中部插入或删除元素，则花费时间要长一些（移动元素需要耗费时间），时间复杂度为线性阶 $O(n)$</p><br><ul><li>size( )：返回容器内元素的个数</li><li>empty( )：返回容器是否为空，若容器内为空，则返回true；若容器内不为空，即存在元素，则返回false</li><li>clear( )：清空容器内的所有元素</li><li>begin( )：返回指向容器中第一个元素的迭代器</li><li>end( )：返回指向容器最后一个元素所在位置后一个位置的迭代器</li><li>rbegin( )：返回指向最后一个元素的迭代器</li><li>rend( )：返回指向第一个元素所在位置前一个位置的迭代器</li><li>back( )：返回最后一个元素的值</li><li>push_back( )：在序列的尾部添加一个元素</li><li>pop_back( )：在序列的尾部删除一个元素</li><li>insert( )：在指定的位置插入一个或多个元素 (这里的位置指的是某个位置的迭代器，如 a.begin()+2 等 )</li><li>erase( )：移出一个元素或一段元素 (一段元素的区域为左闭右开，且位置同样为迭代器)</li></ul><br><p><a href="https://imgtu.com/i/LrtWVg"><img src="https://s1.ax1x.com/2022/04/20/LrtWVg.gif" alt="LrtWVg.gif"></a></p><hr><br><p>可以创建一个vector容器：<code>vector&lt;int&gt; name/vector&lt;double&gt; name</code>, &lt;&gt;中标出vector容器的类型</p><br><p>可以在创建的同时指定初始值以及元素个数：<code>vector&lt;int&gt; primes = {2, 3, 5, 7, 11, 13, 17, 19};</code></p><br><p>也可以指定元素个数：<code>vector&lt;double&gt; values(20);</code>，且这二十个元素初始值均为0<br>注意：圆括号 ( ) 和大括号 { } 是有区别的，前者（例如(20)表示元素的个数，而后者（例如{20}）则表示 vector 容器中只有一个元素 20</p><br><p>也可以指定其他元素做初始值：<code>vector&lt;double&gt; values(20, 1.0);</code>，这20个元素初始值均为1.0</p><br><p>值得一提的是，圆括号 ( ) 中的 2 个参数，既可以是常量，也可以用变量来表示:</p><pre class="line-numbers language-none"><code class="language-none">int num=20;double value =1.0;vector&lt;double&gt; values(num, value);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br><p>通过存储元素类型相同的其它 vector 容器，也可以创建新的 vector 容器：</p><pre class="line-numbers language-none"><code class="language-none">vector&lt;int&gt;value1 = {1,2,3,4,5};vector&lt;int&gt;value2(value1); // value2容器的元素和value1容器的元素相同，都是 1，2，3，4，5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>在此基础上，如果不想复制其它容器中所有的元素，可以用一对指针或者迭代器来指定初始值的范围：</p><pre class="line-numbers language-none"><code class="language-none">vector&lt;int&gt; a = {1,2,3,4,5};vector&lt;int&gt; b(a.begin(), a.begin()+3); // b容器内的元素为 1，2，3int c[] = {1,2,3,4,5};vector&lt;int&gt; d(c, c+3); // d容器内的元素为 1，2，3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>特别的，vector不能重复定义同一个容器，否则报错</p><br><p>通过迭代器循环vector容器的方法：</p><pre class="line-numbers language-none"><code class="language-none">vector&lt;char&gt; value = {'S','T','L'};for (vector&lt;char&gt;::iterator i = value.begin();i != value.end();i ++){    cout &lt;&lt; *i &lt;&lt; endl;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>for循环中的vector::iterator可用auto代替，这是C++11的新标准</p><br><p>另外，vector支持比较运算，比较方式为字典序：</p><pre class="line-numbers language-none"><code class="language-none">vector&lt;int&gt; a = {3,3};vector&lt;int&gt; b(4,2); // b = {2,2,2,2}if (a &gt; b) cout &lt;&lt; "a &gt; b"; // 输出 a &gt; b<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> STL </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>本地创建新仓库并上传github仓库时，git push -u origin master报错的解决方案</title>
+      <link href="/2022/02/04/ben-di-chuang-jian-xin-cang-ku-bing-shang-chuan-github-cang-ku-shi-git-push-u-origin-master-bao-cuo-de-jie-jue-fang-an/"/>
+      <url>/2022/02/04/ben-di-chuang-jian-xin-cang-ku-bing-shang-chuan-github-cang-ku-shi-git-push-u-origin-master-bao-cuo-de-jie-jue-fang-an/</url>
+      
+        <content type="html"><![CDATA[<h3 id="当在本地init一个新仓库时，想要与Github的仓库连接，首先一定是这三件套命令："><a href="#当在本地init一个新仓库时，想要与Github的仓库连接，首先一定是这三件套命令：" class="headerlink" title="当在本地init一个新仓库时，想要与Github的仓库连接，首先一定是这三件套命令："></a>当在本地init一个新仓库时，想要与Github的仓库连接，首先一定是这三件套命令：</h3><br><pre class="line-numbers language-none"><code class="language-none">git remote add origin https://github.com/(Github用户名)/(仓库名).gitgit branch -M maingit push -u origin main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br><p><strong>特别值得提出的是，由于master名称涉嫌种族歧视原因，Github已经废弃master名称，改为main，所以命令第二行作用为将master名称改为main。</strong></p><br><p>但是当我们执行第三条命令的时候，即<code>git push -u origin main</code>，有时会出现一些蜜汁bug，比如：</p><br><p><code>Updates were rejected because the tip of your current branch is behind its remote counterpart. Integrate the remote changes (e.g. 'git pull ...') before pushing again.See the 'Note about fast-forwards' in 'git push --help' for details.</code></p><br><h3 id="经查询，这应该是本地的仓库版本和Github的仓库版本不一致导致的，在解决这个问题之前，需要保证已经做到以下几点："><a href="#经查询，这应该是本地的仓库版本和Github的仓库版本不一致导致的，在解决这个问题之前，需要保证已经做到以下几点：" class="headerlink" title="经查询，这应该是本地的仓库版本和Github的仓库版本不一致导致的，在解决这个问题之前，需要保证已经做到以下几点："></a>经查询，这应该是本地的仓库版本和Github的仓库版本不一致导致的，在解决这个问题之前，需要保证已经做到以下几点：</h3><br><ol><li><p>在本地创建新仓库时，要先在本地commit一个版本，才能git push到Github</p></li><li><p>要把本地的公钥复制到Github的账户上，否则将不能git push和git pull</p></li><li><p>当Github仓库为非空时，第一次不能直接push上去，应该先git pull，把Github仓库的内容复制到本地，再把所有文件一起git push上去</p></li></ol><br><p>若已做到以上三点还是报错(我第一次也是这样，则说明应该就是本地的仓库版本和Github的仓库版本不一致的原因。</p><p>应先pull远程仓库，再push即可</p><br><p>输入<code>git pull origin main --allow-unrelated-histories</code> (该选项可以合并两个独立启动仓库的历史)</p><p>之后应该进入了某个文件，直接退出即可，再输入<code>git push -u origin main</code></p><br><p><strong>此时应该已经解决了你的问题，已经将本地仓库与Github仓库连接，之后便可自由尽兴的push和pull</strong></p><br><p>若你此时还未解决问题，我也爱莫能助，因为我到了这一步已经解决了问题，你可以按照错误提示继续搜索，以寻找答案，祝好运</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> GitHub </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 总结 </tag>
+            
+            <tag> 仓库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>蓝桥杯 平面分割</title>
+      <link href="/2022/01/22/lan-qiao-bei-ping-mian-fen-ge/"/>
+      <url>/2022/01/22/lan-qiao-bei-ping-mian-fen-ge/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://imgtu.com/i/Lr8j3V"><img src="https://s1.ax1x.com/2022/04/20/Lr8j3V.jpg" alt="Lr8j3V.jpg"></a><br><a href="https://imgtu.com/i/Lr8vcT"><img src="https://s1.ax1x.com/2022/04/20/Lr8vcT.png" alt="Lr8vcT.png"></a><br><a href="https://imgtu.com/i/Lr8xjU"><img src="https://s1.ax1x.com/2022/04/20/Lr8xjU.png" alt="Lr8xjU.png"></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 几何 </tag>
+            
+            <tag> 蓝桥杯 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>蓝桥杯 直线</title>
+      <link href="/2022/01/20/lan-qiao-bei-zhi-xian/"/>
+      <url>/2022/01/20/lan-qiao-bei-zhi-xian/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-none"><code class="language-none">#include&lt;bits/stdc++.h&gt;using namespace std;set&lt;pair&lt;double, double&gt;&gt; s;vector&lt;pair&lt;int, int&gt; &gt; v;int res;int main(){    for (int i = 0;i &lt; 20;i ++)    {        for (int j = 0;j &lt; 21;j ++)        {            v.push_back({i, j});        }    }    for (int i = 0;i &lt; v.size() - 1;i ++)    {        for (int j = i + 1;j &lt; v.size();j ++)        {            if (v[i].first == v[j].first) continue;            double x1 = 1.0*v[i].first, x2 = 1.0*v[j].first;            double y1 = 1.0*v[i].second, y2 = 1.0*v[j].second;            double k = (y2-y1)*1.0/(x2-x1);            double b = (y1*x2-y2*x1)*1.0/(x2-x1);            // double b = y2-(y2-y1)*1.0/(x2-x1)*x2;            s.insert({k, b});         }    }    cout &lt;&lt; (s.size() + 20); // 答案：40257        return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p>蓝桥杯 直线 </p><br><p>已知两点带入 y=kx+b 中求b时，应该用两式消去 kx1x2 的办法求b的表达式，不应该直接带入一点的坐标求b，否则会有精度问题。</p><br><pre class="line-numbers language-none"><code class="language-none">#include &lt;algorithm&gt;#include &lt;cmath&gt;#include &lt;iostream&gt;#include &lt;set&gt;using namespace std;typedef pair&lt;int, int&gt; P;typedef pair&lt;pair&lt;int, int&gt;, pair&lt;int, int&gt;&gt; PP; set&lt;pair&lt;pair&lt;int, int&gt;, pair&lt;int, int&gt;&gt;&gt; Set; //构造一个set，里面能放两个pair类型。int main() {    for (int x1 = 0; x1 &lt; 20; x1++) {        for (int y1 = 0; y1 &lt; 21; y1++) {            for (int x2 = 0; x2 &lt; 20; x2++) {                for (int y2 = 0; y2 &lt; 21; y2++) {                    if (x1 == x2 &amp;&amp; y1 == y2)                        continue;                    if (x1 != x2 &amp;&amp; y1 != y2) {     //避免斜率不存在的情况，和平行的情况。                        int k1 = y2 - y1, k1f = 0;  // K的分子 kf1记录k1的正负，我们总想把符号放到分子上                        if (k1 &lt; 0) //记录是不是负数                            k1f = 1;                        int k2 = x2 - x1, k2f = 0;  // K的分母                        if (k2 &lt; 0)                            k2f = 1;                        int c = __gcd(abs(k1), abs(k2));                        k1 /= c;  //化简                        k2 /= c;                        int b1 = y1 * (x2 - x1) - x1 * (y2 - y1), b1f = 0;  //计算b的分子和分母，下面的过程和上面是一样的，                        if (b1 &lt; 0)                            b1f = 1;                        int b2 = x2 - x1, b2f = 0;                        if (b2 &lt; 0)                            b2f = 1;                        c = __gcd(abs(b1), abs(b2));                        b1 /= c;                        b2 /= c;                        // cout &lt;&lt; pow(-1, k1f + k2f) * abs(k1) &lt;&lt; "/" &lt;&lt; abs(k2) &lt;&lt; " " &lt;&lt; pow(-1, b1f + b2f) * abs(b1) &lt;&lt; "/" &lt;&lt; abs(b2) &lt;&lt; endl;                        Set.insert({{pow(-1, k1f + k2f) * abs(k1), abs(k2)}, {pow(-1, b1f + b2f) * abs(b1), abs(b2)}});//把负数的符号放到分子上。                    }                }            }        }    }    cout &lt;&lt; Set.size() + 20 + 21;//因为没有计算横着和竖着的情况，别忘记加回去。    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p><strong>还可以用分式的方法储存，避免精度问题，记得约分！！！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 几何 </tag>
+            
+            <tag> 蓝桥杯 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>大模板</title>
+      <link href="/2022/01/17/da-mo-ban/"/>
+      <url>/2022/01/17/da-mo-ban/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-none"><code class="language-none">#include &lt;bits/stdc++.h&gt;#define pb push_back#define fi first#define se secondtypedef long long LL;typedef pair&lt;int, int&gt; PII;using namespace std;const int INF = 0x3f3f3f3f;const int MOD = 1e9 + 7;const double eps = 1e-6;const double PI = acos(-1);const int N = 1e5 + 10;int f[N], g[N];int main(){    ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);                return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模板 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>22/01/10 随笔</title>
       <link href="/2022/01/10/sui-bi/"/>
       <url>/2022/01/10/sui-bi/</url>
@@ -52,6 +486,35 @@
             <tag> 随笔 </tag>
             
             <tag> 函数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>P2181 对角线</title>
+      <link href="/2022/01/10/p2181-dui-jiao-xian/"/>
+      <url>/2022/01/10/p2181-dui-jiao-xian/</url>
+      
+        <content type="html"><![CDATA[<p>从n边形的一个顶点可以引出（n-3）条对角线。</p><br><p>n边形一共有n(n-3)/2条对角线。</p><br><p>对角线交点公式：n * (n-1) * (n-2) * (n-3) / 24</p><br><p><strong>证明：</strong></p><p>首先由于不会有三条对角线交于一点，所以过某一个交点有且只能有２条对角线</p><br><p>而这两条对角线实质上是确定了４个顶点（也可以看做是一个四边形的两条对角线交于一点，求四边形的数量）。</p><br><p>因此我们只需要确定４个顶点就得到了这个唯一确定的交点。</p><br><p>因此我们只需要求这样４个顶点的搭配有多少个了</p><br><p>也就是从ｎ个顶点中取４个出来。</p><br><p>根据组合数的公式，（如果你不知道组合数的公式可以这么推：第一次取可以ｎ个点都是可以取的，第二次取的时候第一个取的点就不能取了，所以只能取(n-1)种，以此类推）</p><br><p>由于改变四个点的顺序不会改变对角线，因此是求的组合而不是排列，也就要除以４！，也就是２４</p><br><p>于是我们就得到了公式：<code>n * (n-1) * (n-2) * (n-3) / 24</code><br>(源自洛谷)</p><p>ps : 多边形的内角和公式：(n-2)×180°</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 总结 </tag>
+            
+            <tag> 洛谷 </tag>
+            
+            <tag> 几何 </tag>
             
         </tags>
       
